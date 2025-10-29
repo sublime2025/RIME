@@ -13,7 +13,7 @@
 # WeaselSetup.exe /toggleascii - 设置系统快捷键用于切换 ASCII 模式（0.16.1 以上版本）
 
 # 部分选项需要将 Weasel 更新 16.0 及以上版本才能生效
-config_version: "2024-09-25"
+config_version: "205-10-24"
 
 # [app_options]
 # 针对特定应用的设置
@@ -54,7 +54,7 @@ style:
   # 全局字体
   # 格式：字体1:起始码位:结束码位:字重:字形,字体2……，字体会依次 fallback
   # 详细设定请参考 <https://github.com/rime/weasel/wiki/字體設定>
-  font_face: "Segoe UI Emoji, Microsoft YaHei, SF Pro, Noto Color Emoji"
+  font_face: "Segoe UI Emoji:23:23, Segoe UI Emoji:2a:2a, Segoe UI Emoji:30:39, Segoe UI Emoji:fe0f:fe0f, Segoe UI Emoji:20e3:20e3, Segoe UI, Microsoft YaHei, DengXian, Segoe UI Emoji, Noto Color Emoji, Segoe UI Symbol"
   label_font_face: "Microsoft YaHei"       # 标签字体
   comment_font_face: "Microsoft YaHei"     # 注释字体
   font_point: 14                           # 全局字体字号
@@ -153,18 +153,143 @@ preset_color_schemes:
     # nextpage_color: 0x000000               # 下一页
     # prevpage_color: 0x000000               # 上一页
 
-  psionics:
-    name: 幽能／Psionics
+  # 修改自鼠须管配色方案
+  purity_of_form_custom:
+    name: "純粹的形式／Purity of Form Custom"
     author: 雨過之後、佛振
-    text_color: 0xc2c2c2
-    back_color: 0x444444
-    border_color: 0x444444
-    candidate_text_color: 0xeeeeee
-    hilited_text_color: 0xeeeeee
-    hilited_back_color: 0x444444
-    hilited_candidate_label_color: 0xfafafa
-    hilited_candidate_text_color: 0xfafafa
-    hilited_candidate_back_color: 0xd8bf00
+    text_color: 0x808080
+    back_color: 0x545554
+    label_color: 0xBBBBBB
+    border_color: 0x545554
+    shadow_color: 0xb4000000
     comment_text_color: 0x808080
-    hilited_comment_text_color: 0x444444
-# [End of <preset_color_schemes>]
+    candidate_text_color: 0xEEEEEE
+    hilited_text_color: 0xEEEEEE
+    hilited_comment_text_color: 0x808080
+    hilited_candidate_back_color: 0xE3E3E3
+    hilited_candidate_border_color: 0xE3E3E3
+    hilited_candidate_label_color: 0x4C4C4C
+    hilited_candidate_text_color: 0x000000
+
+  # 以下为 weasel 自带的配色方案
+  # source: <https://github.com/rime/weasel/blob/master/output/data/weasel.yaml>
+
+  aqua:
+    name: 碧水／Aqua
+    author: 佛振 <chen.sst@gmail.com>
+    text_color: 0x000000
+    back_color: 0xeceeee
+    shadow_color: 0x00000000
+    border_color: 0xe0e0e0
+    hilited_text_color: 0x000000
+    hilited_back_color: 0xd4d4d4
+    hilited_shadow_color: 0x00000000
+    hilited_candidate_text_color: 0xffffff
+    hilited_candidate_back_color: 0xfa3a0a
+    hilited_candidate_shadow_color: 0x00000000
+    candidate_text_color: 0x000000
+    candidate_back_color: 0xeceeee
+    candidate_shadow_color: 0x00000000
+
+  google:
+    name: 谷歌／Google
+    author: skoj <skoj@qq.com>
+    text_color: 0x666666
+    candidate_text_color: 0x000000
+    back_color: 0xFFFFFF
+    border_color: 0xE2E2E2
+    hilited_text_color: 0x000000
+    hilited_back_color: 0xFFFFFF
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_candidate_back_color: 0xCE7539
+
+  kuma_shuzboz:
+    name: "熊出沒／Kuma Shuzboz"
+    author: "Patricivs <ipatrickmac@me.com>"
+    text_color: 0x000000
+    back_color: 0x2db6f8
+    border_color: 0x2db6f8
+    label_color: 0xffffff
+    hilited_text_color: 0x2db6f8
+    hilited_back_color: 0xffffff
+    candidate_text_color: 0xffffff
+    comment_text_color: 0xffffff
+    hilited_candidate_text_color: 0xffffff
+    hilited_comment_text_color: 0xffffff
+    hilited_candidate_back_color: 0x000000
+
+  kuon:
+    name: "琨／Kuon"
+    author: "Patricivs <ipatrickmac@me.com>"
+    text_color: 0xffffff
+    back_color: 0x70b33e
+    border_color: 0x70b33e
+    label_color: 0xffffff
+    hilited_text_color: 0x70b33e
+    hilited_back_color: 0xffffff
+    candidate_text_color: 0xffffff
+    comment_text_color: 0xffffff
+    hilited_candidate_text_color: 0x70b33e
+    hilited_comment_text_color: 0x70b33e
+    hilited_candidate_back_color: 0xffffff
+
+  android:
+    name: "安卓／Android"
+    author: "Patricivs <ipatrickmac@me.com>"
+    text_color: 0xffffff
+    back_color: 0x99731c
+    border_color: 0x99731c
+    label_color: 0xc18835
+    hilited_text_color: 0x50c4a8
+    hilited_back_color: 0x99731c
+    candidate_text_color: 0xffffff
+    comment_text_color: 0xffffff
+    hilited_candidate_text_color: 0xffffff
+    hilited_comment_text_color: 0xffffff
+    hilited_candidate_back_color: 0x50c4a8
+
+  cool_breeze:
+    name: "清風／Cool Breeze"
+    author: "skoj <skoj@qq.com>"
+    text_color: 0x0000FF
+    back_color: 0xFFFBFB
+    border_color: 0xFFAAAA
+    hilited_text_color: 0x0000CE
+    hilited_back_color: 0xFFFBFB
+    candidate_text_color: 0x009100
+    hilited_candidate_text_color: 0x6F003A
+    hilited_candidate_back_color: 0xFFD6AC
+
+  flypy:
+    # description: |
+    #   小鹤飞扬：白底蓝字，红色高亮。
+    #   根据小鹤双拼官网图片制作
+    name: "小鹤飞扬／flypy"
+    author: "Pal.lxk <Pal.lxk@gmail.com>"
+    text_color: 0x000000
+    back_color: 0xffffff
+    border_color: 0xc6c6c6
+    label_color: 0xff8000
+    hilited_text_color: 0xff8000
+    hilited_back_color: 0xffffff
+    candidate_text_color: 0xff8000
+    comment_text_color: 0xff8000
+    hilited_candidate_text_color: 0x0000b0
+    hilited_comment_text_color: 0x0000b0
+    hilited_candidate_back_color: 0xffffff
+
+  metroblue:
+    name: "现代蓝／Metro Blue"
+    author: "Prcuvu <prcuvu@gmail.com>"
+    text_color: 0x000000
+    back_color: 0xffffff
+    border_color: 0xd77800
+    label_color: 0x838383
+    hilited_text_color: 0x000000
+    hilited_back_color: 0xffffff
+    candidate_text_color: 0x000000
+    comment_text_color: 0x000000
+    hilited_candidate_text_color: 0xffffff
+    hilited_comment_text_color: 0xffffff
+    hilited_candidate_back_color: 0xd77800
+    hilited_label_color: 0xffffff
