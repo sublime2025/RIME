@@ -1,0 +1,2 @@
+# RIME
+Weasel Config
