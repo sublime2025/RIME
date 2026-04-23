@@ -93,18 +93,18 @@ preset_color_schemes:
   jianchun:
     name: Simple/Blue
     author: amzxyz
-    back_color: '0xf2f2f2'
-    border_color: '0xCE7539'
-    text_color: '0x3c647e'
-    hilited_text_color: '0x3c647e'
-    hilited_back_color: '0x797954'
-    hilited_comment_text_color: '0xffffff'
-    hilited_candidate_text_color: '0xffffff'
-    hilited_candidate_back_color: '0xCE7539'
-    hilited_label_color: '0xdedede'
-    candidate_text_color: '0x000000'
-    comment_text_color: '0x000000'
-    label_color: '0x91897e'
+    back_color: 0xf2f2f2
+    border_color: 0xCE7539
+    text_color: 0x3c647e
+    hilited_text_color: 0x3c647e
+    hilited_back_color: 0x797954
+    hilited_comment_text_color: 0xffffff
+    hilited_candidate_text_color: 0xffffff
+    hilited_candidate_back_color: 0xCE7539
+    hilited_label_color: 0xdedede
+    candidate_text_color: 0x000000
+    comment_text_color: 0x000000
+    label_color: 0x91897e
 
   purple_light:
     name: Simple/Purple
@@ -184,64 +184,15 @@ preset_color_schemes:
     text_color: 0x8100EB
     shadow_color: 0x20000000
 
-  amber-7:
-    name: weasel/Light
-    author: 五笔小筑
-    # 背景设置
-    back_color: 0xffffff                # 窗口背景
-    border_color: 0xE99321            # 窗口边框
-    shadow_color: 0x00000000        # 窗口阴影
-    # 内选区域
-    text_color: 0xE99321                            # 文字
-    hilited_text_color: 0x2238dc           # 编码
-    hilited_back_color: 0xffffff           # 背景
-    hilited_shadow_color: 0x00000000   # 阴影
-    # 以下两项在 inline_preedit: false 时生效
-    nextpage_color: 0x0000FF          # 翻页箭头颜色：下一页；不设置则不显示箭头
-    prevpage_color: 0x0000FF          # 翻页箭头颜色：上一页；不设置则不显示箭头
-    # 激活候选项
-    hilited_mark_color: 0x00000000        # 激活标签
-    hilited_label_color: 0x2021FF          #序号文字
-    hilited_candidate_text_color: 0x2021FF           #候选文字
-    hilited_comment_text_color: 0x000000               #提示文字
-    hilited_candidate_back_color: 0xECF1FC           #激活背景
-    hilited_candidate_border_color: 0xCFDCFD       #激活边框
-    hilited_candidate_shadow_color: 0x00000000   #激活阴影
-    # 其它候选项
-    label_color: 0xE99321                               #序号文字
-    candidate_text_color: 0xE99321            #候选文字
-    comment_text_color: 0x000000                #提示文字
-    candidate_back_color: 0xffffff            #候选背景
-    candidate_border_color: 0xffffff        #候选边框
-    candidate_shadow_color: 0x00000000    #候选阴影
-  
+# 亮色模式
   mint_light_blue:
-    name: Mint Light Blue
+    name: "Mint Light Blue"
     author: Mintimate
-    text_color: 0x6495ed
-    back_color: 0xefefef
-    label_color: 0xcac9c8
-    border_color: 0xefefef
-    shadow_color: 0xb4000000
-    comment_text_color: 0xcac9c8
-    candidate_text_color: 0x424242
-    hilited_text_color: 0xed9564
-    hilited_back_color: 0xefefef
-    hilited_candidate_back_color: 0xed9564
-    hilited_candidate_text_color: 0xefefef 
-    hilited_candidate_label_color: 0xcac9c8
-    hilited_label_color: 0xcac9c8 
-    hilited_comment_text_color: 0xefefef
-    nextpage_color: 0x0000FF
-    prevpage_color: 0x0000FF
-  mint_light_blue:
-    name: Mint Light Blue
-    author: Mintimate
-    translucency: true                     # 磨砂： false | true
+    translucency: false                     # 磨砂： false | true
     mutual_exclusive: false                 # 色不叠加： false | true
-    shadow_size: 0                          # 阴影大小
+    shadow_size: 0                       `  # 阴影大小
     line_spacing: 5                         # 行间距
-    # base_offset: 0                          # 字基高(Action版本鼠须管会崩溃)
+    base_offset: 0                          # 字基高
     alpha: 1                                # 透明度，0~1
     spacing: 10                             # 拼音与候选项之间的距离 （inline_preedit: false）
     back_color: 0xefefef                    # 底色
@@ -254,15 +205,16 @@ preset_color_schemes:
     hilited_comment_text_color: 0xefefef    # 选中注颜色
     text_color: 0x6495ed                    # 拼音颜色 （inline_preedit: false）
     hilited_text_color: 0xed9564            # 选中拼音颜色 （inline_preedit: false）
-    
+
+# 暗色模式
   mint_dark_blue:
-    name: Mint Dark Blue
+    name: "Mint Dark Blue"
     author: Mintimate
-    translucency: true                     # 磨砂： false | true
+    translucency: false                     # 磨砂： false | true
     mutual_exclusive: false                 # 色不叠加： false | true
     shadow_size: 0                          # 阴影大小
     line_spacing: 5                         # 行间距
-    # base_offset: 0                          # 字基高(Action版本鼠须管会崩溃)
+    base_offset: 0                          # 字基高
     alpha: 1                                # 透明度，0~1
     spacing: 10                             # 拼音与候选项之间的距离 （inline_preedit: false）
     back_color: 0x424242                    # 底色
@@ -313,29 +265,16 @@ preset_color_schemes:
   macos_light:
     name: Mac/Light
     author: 一方
-    back_color: 0xFFFFFF    # 候选条背景色，24位色值，16进制，BGR顺序
-    border_color: 0xFFFFFF    # 边框色
-    text_color: 0x424242    # 拼音行文字颜色
-    hilited_back_color: 0xD75A00    # 第一候选项背景背景色
-    hilited_candidate_text_color: 0xFFFFFF    # 第一候选项文字颜色
-    hilited_candidate_label_color: 0xFFFFFF   # 第一候选项编号颜色
+    back_color: 0xFFFFFF                    # 候选条背景色，24位色值，16进制，BGR顺序
+    border_color: 0xFFFFFF                  # 边框色
+    text_color: 0x424242                    # 拼音行文字颜色
+    hilited_back_color: 0xD75A00            # 第一候选项背景背景色
+    hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+    hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
     hilited_comment_text_color: 0x999999    # 注解文字高亮
-    hilited_text_color: 0x999999    # 高亮拼音 (需要开启内嵌编码)
-    candidate_text_color: 0x3c3c3c    # 预选项文字颜色
-    comment_text_color: 0x999999    # 拼音等提示文字颜色
-    horizontal: true    # 水平排列
-    inline_preedit: true    # 单行显示，false双行显示
-    label_color: 0x999999   # 预选栏编号颜色
-    candidate_format: "%c\u2005%@"    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
-    font_face: "PingFangSC"   # 候选词编号字体
-    font_point: 17    # 候选文字大小
-    label_font_point: 13    # 候选编号大小
-    corner_radius: 5    # 候选条圆角
-    hilited_corner_radius: 5    # 高亮圆角
-    border_height: 4     # 窗口上下高度
-    border_width: 4   # 窗口左右宽度
-    border_color_width: 0   #输入条边框宽度
-    #label_font_face: "SFCompactText-Regular"  # 候选词编号字体
+    hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
+    candidate_text_color: 0x3c3c3c          # 预选项文字颜色
+    comment_text_color: 0x999999            # 拼音等提示文字颜色
      
   macos_dark:
     name: Mac/Dark
@@ -350,30 +289,10 @@ preset_color_schemes:
     hilited_text_color: 0x999999    # 高亮拼音 (需要开启内嵌编码)
     candidate_text_color: 0xe9e9ea    # 预选项文字颜色
     comment_text_color: 0x999999    # 拼音等提示文字颜色
-    horizontal: true    # 水平排列
-    inline_preedit: true    # 单行显示，false双行显示
-    label_color: 0x999999   # 预选栏编号颜色
-    candidate_format: "%c\u2005%@"    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
-    font_face: "PingFangSC"   # 候选词编号字体
-    font_point: 17    # 候选文字大小
-    label_font_point: 13    # 候选编号大小
-    corner_radius: 5    # 候选条圆角
-    hilited_corner_radius: 5    # 高亮圆角
-    border_height: 4     # 窗口上下高度
-    border_width: 4   # 窗口左右宽度
-    border_color_width: 0   #输入条边框宽度
-    #label_font_face: "SFCompactText-Regular"  # 候选词编号字体
 
   wechat_light:
     name: "WeChat/Light"
     author: "小码哥"
-    font_face: "PingFangSC"          # 字体及大小
-    font_point: 16
-    label_font_face: "PingFangSC"    # 序号字体及大小
-    label_font_point: 13
-    comment_font_face: "PingFangSC"  # 注字体及大小
-    comment_font_point: 16
-    candidate_format: "%c\u2005%@\u2005" # 编号 %c 和候选词 %@ 前后的空间
     candidate_list_layout: linear   # 候选排布：层叠 stacked | 行 linear
     text_orientation: horizontal    # 行文向： 横 horizontal | 纵 vertical
     inline_preedit: true            # 拼音位于： 候选框 false | 行内 true
@@ -408,13 +327,6 @@ preset_color_schemes:
   wechat_dark:
     name: "WeChat/Dark"
     author: "小码哥"
-    font_face: "PingFangSC"          # 字体及大小
-    font_point: 16
-    label_font_face: "PingFangSC"    # 序号字体及大小
-    label_font_point: 13
-    comment_font_face: "PingFangSC"  # 注字体及大小
-    comment_font_point: 16
-    candidate_format: "%c\u2005%@\u2005" # 编号 %c 和候选词 %@ 前后的空间
     candidate_list_layout: linear   # 候选排布：层叠 stacked | 行 linear
     text_orientation: horizontal    # 行文向： 横 horizontal | 纵 vertical
     inline_preedit: true            # 拼音位于： 候选框 false | 行内 true
